@@ -1,0 +1,42 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+    body {
+        width: 600px;
+        margin: 20px auto;
+        background-color: #ff5bffde;
+        padding: 0 20px 20px 20px;
+        border: 5px solid black;
+    }
+
+html {
+    background-color: #800080;
+}
+
+h1 {
+    color: #800080;
+    font-weight: bold; 
+    margin: 0;
+    padding: 20px 0;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#Posiciones{
+    color: blue;
+}
+#Caracteristicas{
+    color: black;
+}
+.Redes{
+    color: pink;
+}
