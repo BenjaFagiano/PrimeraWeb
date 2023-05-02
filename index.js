@@ -1,12 +1,20 @@
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'ligth';
+const slider = document.getElementById('slider');
 
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
+
+setTheme(localStorage.getItem('theme') || preferedColorScheme);
 
 let miImagen = document.querySelector('img');
 miImagen.onclick = function() {
     let src = miImagen.getAttribute('src');
-    if(src === 'imagen/Benja jugando.png') {
-        miImagen.setAttribute('src', 'imagen/Benja jugando 2.jpg');
+    if(src === 'assets/imagen/Benja jugando.png') {
+        miImagen.setAttribute('src', 'assets/imagen/Benja jugando 2.jpg');
     } else {
-        miImagen.setAttribute('src', 'imagen/Benja jugando.png');
+        miImagen.setAttribute('src', 'assets/imagen/Benja jugando.png');
     }
 }
 
